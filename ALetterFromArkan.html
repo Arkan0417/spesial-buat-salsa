@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surat Permintaan Maaf Buat Salsa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #802d72;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ffff;
+    }
+
+    p {
+      margin: 20px;
+    }
+
+    #apology {
+      font-size: 18px;
+      background-color: #8e2ea1;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      color: white;
+      margin-bottom: 300px;
+    }
+
+    #gift {
+      margin-top: 40px;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      #apology {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      #gift {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Dear Salsabila Siti Afifah  Cewe yang Paling Arkan Sayang Walaupun Sahabatan</h1>
+  <div id="apology">
+    <p>
+      Arkan minta maaf banget buat kemarin malam, aku ga bermaksud buat bikin kamu marah atau sakit hati, kamu ga jahat kok, kamu udah super baik banget kok sama aku, aku bener-bener nyesel udah bikin kamu marah.
+    </p>
+    <p>
+        Kamu sangat berarti banget buat aku, aku ngehargain hubungan kita lebih dari apa pun. Aku siap ngelakuin apa pun buat memperbaikinya dan mastiin kalo kita bisa bergerak maju dengan cara yang positif.
+    </p>
+    <p>
+        Aku ngerti kalo kamu butuh waktu buat maafin aku, tapi aku harap kita bisa bicara terus nyelesain masalah nya bersama ya. Kamu pantes banget dapat cinta, sayang, dan dukungan dari aku. Aku komitmen bakal jadi partner kamu yang lebih baik kok.
+    </p>
+    <p>
+        Sekali lagi, aku minta maaf banget sama kamu dari lubuk hati aku yang paling dalem yaa. Liat kata-kata dibawah ya sebagai tanda cinta dan permintaan maaf dari aku.
+    </p>
+    <p>
+        Baikan ya caa? dibuka block wa akunyaa hehehe
+  </p>
+  </div>
+</body>
+<script>
+    onload = function(){
+        var d = document;
+
+        function feedin(feed, speed){
+            var filter = 0;
+            feed.style.opacity = 0;
+            feed.style.MozOpacity = 0;
+            var timer = setInterval(function(){
+                filter ++;
+                feed.style.opacity = (filter / 10);
+                feed.style.MozOpacity = (filter / 10);
+                if (filter == 10){
+                    clearInterval(timer);
+                }
+            },speed);
+        }
+
+        var str = [
+        [36,37,38,72,107,142,176,177,178],
+        [41,76,111,146,181,182,183],
+        [185,150,115,80,45,46,47,82,117,152,187],
+        [186,49,84,119,154,190],
+        [156,121,86,51,53,54,55,88,123,158,193,124,125,194,195],
+        [58,93,128,129,130,95,60,164,199],
+        [202,167,132,97,62,63,64,99,134,169,204],
+        [203,66,101,136,171,206,207,208,173,138,103,68],
+        ];
+
+        for (i=0;i<245;i++){
+            var box = d.createElement('div');
+            with (d.body.appendChild(box).style){
+                if(i % 35 == 0){ clear = 'both'; }
+                border = 'solid #234 1px';
+                width = '20px';
+                height = '20px';
+                margin = '2px';
+                float = 'left';
+            }
+        }
+
+        var mess= d.getElementsByTagName('div');
+            var i = 0, j = 0;
+            setInterval(function(){
+                feedin(mess[str[i][j]], 25);
+                mess[str[i][j]].style.background = '#f39'
+                j++;
+                if (i == str.length) { clearInterval(timer); }
+                if (j == str[i].length) { i++; j = 0; }
+            }, 50);
+    }
+</script>
+</html>
